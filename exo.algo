@@ -4,7 +4,7 @@ VAR
 
    vowels ,nbewords,nbrchar:= INTEGER ;
 
-   input:= STRING[] ;
+   input:= STRING;
 
 BEGIN
 
