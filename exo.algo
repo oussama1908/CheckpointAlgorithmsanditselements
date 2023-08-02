@@ -1,0 +1,48 @@
+ALGORITHM nbrof
+
+VAR
+
+   vowels ,nbewords,nbrchar:= INTEGER ;
+
+   input:= STRING[] ;
+
+BEGIN
+
+  nbrchar:= 0 ;
+
+  nbewords:= 1 ;
+
+  vowels := 0;
+
+  write("type the input")
+
+  read(input)
+
+REPEAT
+
+   
+
+   IF (input[nbrchar]=" ") THEN
+
+       nbewords:=nbewords+1 ;
+
+   END_IF
+
+  IF(input[nbrchar] = "a" OR input[nbrchar] = "e" OR input[nbrchar] = "i" OR input[nbrchar] = "o" OR input[nbrchar] = "u")  THEN
+
+   vowels := vowels  +1 ;
+
+   END_IF
+
+   nbrchar := nbrchar+1 ;
+
+UNTIL (input[nbrchar]=".")
+
+write( "the number of char is  ",nbrchar+1 )
+
+write (" the number of words is  ",nbewords)
+
+write (" the number of vowels is  ",vowels )
+
+END
+
