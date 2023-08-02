@@ -16,11 +16,11 @@ BEGIN
 
   write("type the input")
 
-  read(input)
+  
 
 REPEAT
 
-   
+   read(input)
 
    IF (input[nbrchar]=" ") THEN
 
@@ -28,7 +28,7 @@ REPEAT
 
    END_IF
 
-  IF(input[nbrchar] = "a" OR input[nbrchar] = "e" OR input[nbrchar] = "i" OR input[nbrchar] = "o" OR input[nbrchar] = "u")  THEN
+  IF(input[nbrchar] = "a"  OR input[nbrchar] = "e" OR input[nbrchar] = "i" OR input[nbrchar] = "o" OR input[nbrchar] = "u" OR input[nbrchar] = "A"  OR input[nbrchar] = "E" OR input[nbrchar] = "I" OR input[nbrchar] = "O" OR input[nbrchar] = "U")  THEN
 
    vowels := vowels  +1 ;
 
@@ -38,7 +38,7 @@ REPEAT
 
 UNTIL (input[nbrchar]=".")
 
-write( "the number of char is  ",nbrchar+1 )
+write( "the number of char is ,"nbrchar )
 
 write (" the number of words is  ",nbewords)
 
